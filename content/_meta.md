@@ -1,8 +1,8 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: image/paper_unicorn.png
 Tagline: My portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Länk till sidans github repo.
+      url: https://github.com/sofiesh/Design_course_me
       icon: github
 ---
