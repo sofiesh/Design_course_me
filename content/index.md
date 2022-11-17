@@ -1,6 +1,7 @@
 ---
 Title: Home
 Description: This is my index page.
+Template: report
 ---
 
 About me
