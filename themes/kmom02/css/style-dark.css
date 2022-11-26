@@ -6583,10 +6583,7 @@ readers do not read off random characters that represent icons */
 
 h1,
 h2 {
-  display: flex;
   font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  align-content: center;
 }
 
 h3,
@@ -6597,13 +6594,17 @@ h6 {
 }
 
 .header {
-  background-color: #3b6c86;
+  background-color: #1F3039;
 }
 
 body {
-  background-color: #9facb3;
+  background-color: #374C58;
 }
 
 * {
-  color: #000;
+  color: #e2c999;
+}
+
+img {
+  filter: sepia(100%);
 }

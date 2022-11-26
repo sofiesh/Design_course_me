@@ -23,10 +23,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 h1,
 h2 {
-    display: flex;
     font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    align-content: center;
 }
 
 h3,
@@ -37,15 +34,17 @@ h6 {
 }
 
 .header {
-    background-color: $background-color;
+    background-color: $header-background-dark-mode;
 }
 
 body {
-    background-color: $background-alternative-color;
+    background-color: $background-dark-mode;
 }
 
 * {
-    color: $font-color;
+    color: $font-dark-mode;
 }
 
-  
+img {
+    filter: sepia(100%);
+}  
