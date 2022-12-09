@@ -11,7 +11,10 @@ Social:
     - title: Länk till Sofie's Linkedin
       url: https://se.linkedin.com/in/sofieherou
       icon: fab fa-linkedin
-    - title: Link to W3C unicorn validator
-      url: https://validator.w3.org/unicorn/check?ucn_uri=referer&ucn_task=conformance
-      icon: fad fa-unicorn
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
 ---

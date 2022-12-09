@@ -19,5 +19,3 @@ Responsivity
 ---------------------
 <p>At the moment the site doesnt contain that many features so the main thing is that I've tried to ensure that the image(-s) will not force the visitor to scroll horizontally. I'm also using mobile-menu.css and Normalize.css to adapt to different devices and browsers.</p>
 
-
-The source for this page is in `content/about.md`.

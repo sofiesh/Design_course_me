@@ -321,7 +321,7 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: #ccc;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
@@ -331,7 +331,7 @@ pre {
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: #ccc;
 }
 
 pre code {
@@ -366,6 +366,11 @@ pre code {
 .social i {
   font-size: 2em;
   margin-right: 0, 5em;
+}
+
+.blue-frame {
+  border: 5px solid #3b6c86;
+  padding: 3px;
 }
 
 /* technologies.scss */
@@ -6638,7 +6643,7 @@ h2 {
   display: flex;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  align-content: center;
+  text-align: center;
 }
 
 h3,
@@ -6650,12 +6655,74 @@ h6 {
   align-content: center;
 }
 
-.header {
+.header,
+.footer {
   background-color: #3b6c86;
+  background-image: repeating-linear-gradient(-26deg, rgba(255, 255, 255, 0.163), rgba(255, 255, 255, 0.182) 2px, transparent 2px, transparent 5px);
+  background-size: 6px 8px;
 }
 
+.site-title-link {
+  display: flex;
+  align-content: center;
+}
+
+.site-header .logo {
+  animation: jump 6s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(-100px);
+  }
+  20% {
+    transform: translate(1px);
+  }
+  40% {
+    transform: translate(10px);
+  }
+  60% {
+    transform: translate(30px);
+  }
+  80% {
+    transform: translate(-10px);
+  }
+  100% {
+    transform: translate(1px);
+  }
+}
+.site-header .logo:hover {
+  animation: wiggle 3s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 body {
-  background-color: #9facb3;
+  background-color: #d7e8f2;
 }
 
 * {

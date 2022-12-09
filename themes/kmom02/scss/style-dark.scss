@@ -3,7 +3,7 @@
 @import 'variables';
 
 @import 'blockquotes';
-@import 'code';
+@import 'codedark';
 @import 'content';
 @import 'technologies';
 
@@ -35,6 +35,13 @@ h6 {
 
 .header {
     background-color: $header-background-dark-mode;
+    background-image: repeating-linear-gradient(-26deg, rgba(255, 255, 255, 0.163), rgba(255, 255, 255, 0.182) 2px, transparent 2px, transparent 5px);
+    background-size: 6px 8px;
+}
+
+.site-header
+.title {
+    align-content: center;
 }
 
 body {
@@ -48,3 +55,32 @@ body {
 img {
     filter: sepia(100%);
 }  
+/*
+code {
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #3c2b2b;
+    color: #ccc;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+}
+
+pre {
+    padding: 0 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #f5f5f5;
+}
+
+pre code {
+    display: block;
+    margin: 0;
+    padding: 1.1111em 0;
+    border: 0 none;
+    background: transparent;
+    overflow-x: auto;
+    line-height: 1.4;
+}*/

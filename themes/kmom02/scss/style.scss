@@ -27,7 +27,7 @@ h2 {
     display: flex;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
-    align-content: center;
+    text-align: center;
 }
 
 h3,
@@ -39,8 +39,44 @@ h6 {
     align-content: center;
 }
 
-.header {
+.header,
+.footer {
     background-color: $background-color;
+    background-image: repeating-linear-gradient(-26deg, rgba(255, 255, 255, 0.163), rgba(255, 255, 255, 0.182) 2px, transparent 2px, transparent 5px);
+    background-size: 6px 8px;
+}
+
+.site-title-link {
+    display: flex;
+    align-content: center;
+}
+
+.site-header .logo {
+    animation: jump 6s;
+}
+
+@keyframes jump {
+    0% {transform: translate(-100px);}
+    20% {transform: translate(1px);}
+    40% {transform: translate(10px);}
+    60% {transform: translate(30px);}
+    80% {transform: translate(-10px);}
+    100% {transform: translate(1px);}
+}
+
+.site-header .logo:hover {
+    animation: wiggle 3s;
+}
+
+@keyframes wiggle {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
 }
 
 body {
@@ -50,5 +86,3 @@ body {
 * {
     color: $font-color;
 }
-
-  
